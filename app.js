@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 const path = require("path");
+const serverless = require("serverless-http");
 
 var app = express();
 
@@ -21,8 +22,4 @@ app.use("/project-astitva", astitva);
 const homePage = require("./Home");
 app.use("/", homePage);
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`server is now running on port ${PORT}`);
-});
+module.exports.handler = serverless(app);
