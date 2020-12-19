@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	background-color: #cecece;
 	min-height: 200vh;
+	font-family: "Segoe UI", Roboto, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .header {
@@ -34,9 +35,10 @@ li {
 	align-items: center;
 	text-align: center;
 	color: rgb(230, 216, 216);
-	font-weight: 500;
-	font-family: sans-serif;
-	transition: transform 0.3s;
+	font-weight: 400;
+	font-size: 1.04rem;
+	transition: transform 1s;
+	margin: auto 1.3rem;
 }
 
 ul {
@@ -53,8 +55,12 @@ ul > li {
 .header-links > ul > li:hover {
 	--color: #f3d581;
 	border-bottom: 0.05rem solid var(--color);
-	font-size: 1.3rem;
-	font-weight: 400;
+	transform: scale(1.12);
 	color: var(--color);
-	font-family: serif;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
