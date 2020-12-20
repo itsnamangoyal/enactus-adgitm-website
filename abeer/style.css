@@ -64,3 +64,8 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+
+img {
+	height:200px;
+	background-color: white;
+}
